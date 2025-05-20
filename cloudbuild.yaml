@@ -4,4 +4,3 @@ options:
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'rsync', '-r', 'web-pages/', 'gs://my-web-pages-bucket-2025/']
-                                                       # <-- Add slash here
