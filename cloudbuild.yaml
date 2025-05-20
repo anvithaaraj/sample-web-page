@@ -2,6 +2,5 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
- - name: 'gcr.io/cloud-builders/gsutil'
+  - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'rsync', '-r', 'web-pages/', 'gs://my-web-pages-bucket-2025/']
-                                                       # <-- Add slash here
